@@ -1,0 +1,114 @@
+<html>
+<head>
+  <title> 
+    HarvestHub 
+</title> 
+<link rel="icon" href= "harvesthub.png" type="image/x-icon">
+<style>
+  .contact-section {
+    text-align: center;
+    padding: 50px;
+    position: relative;
+    color: #4caf50;
+    z-index: 1;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  .contact-form {
+    position: relative;
+    z-index: 2;
+    align-items: center;
+    padding-left: 350px;
+    padding-right: 350px;
+  }
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 15px;
+  }
+  .bgi {
+    background-image: url('grocery.jpeg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    z-index: 0;
+    top: 0;
+    left: 0;
+  }
+  .contact-info {
+    margin-top: 50px;
+    text-align: left;
+  }
+  .contact-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  .contact-info p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  h2 {
+    color: white;
+    font-size: 69px;
+    background-color: #4caf50;
+    border-radius: 25px;
+    margin-left: 350px;
+    margin-right: 350px;
+  }
+  button{
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  h3 , p{
+    background-color: #4caf50;
+    color: white;
+    margin-right: 800px;
+    border-radius: 25px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5PX;
+  }
+</style>
+</head>
+<body>
+<div class="bgi"></div>
+<section class="contact-section">
+  <h2>Contact Us</h2>
+  <form class="contact-form">
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+    <br><br>
+    <input type="email" id="email" name="email" placeholder="Your Email" required>
+    <br><br>
+    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+    <br><br>
+    <button onclick="submit_func()">SUBMIT</button>
+  </form>
+  <script>
+    function submit_func()
+    {
+      alert("Message Sent Successfully...");
+    }
+  </script>
+  <div class="contact-info">
+    <h3>Phone: +91 9082975780</h3>
+    <h3>Email: harvesthub@store.com</h3>
+  </div>
+</section>
+</body>
+</html>

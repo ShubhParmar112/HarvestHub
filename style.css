@@ -1,0 +1,143 @@
+    /* style.css */
+
+/* Reset some default styles */
+body, h1, h2, p{
+    margin: 0;
+    padding: 0px;
+    text-align: center;
+}
+/*
+{
+    padding: 20px;
+}
+*/
+/*
+h3{
+    font-size: 20px;
+    padding: 20px;
+}
+*/
+/* Set a background color for the body*/
+body {
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header section */
+
+header {
+    /*background-image: url("vegetables\ footer.jpg");*/
+    /*background-image: url("poster.jpg");*/
+    background-color: #4caf50;
+    color: white;
+    padding: 25px;
+    height: 400px;
+    
+ 
+}
+.banner-card{
+    position: relative;
+    margin-left: 250px;
+    margin-right: 134px;
+    align-content: center;
+}
+.banner-card img
+{
+    opacity: 100%;
+    max-width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.banner-text{
+    text-align: center;
+    position: absolute;
+    top: 85%;
+}
+/* Style the navigation menu */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Style the featured products section */
+.featured-products {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    border: 1px solid #18e1b9;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.price {
+    font-weight: bold;
+    color: #4caf50;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Style links in the footer */
+footer a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+/* Add hover effect to links in the footer */
+footer a:hover {
+    text-decoration: underline;
+}
+h1{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2{
+    background-color: #bdd0cc;
+    padding: 15px;
+    color: #45a049;
+    font-size: 35px;
+}
+div{
+    align-items: center;
+}

@@ -1,0 +1,121 @@
+<html>
+<head>
+  <title> 
+    HarvestHub 
+  </title> 
+  <link rel="icon" href= "harvesthub.png" type="image/x-icon">
+  <style>
+    /* Style the body */
+    body, html {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .bg-image {
+      /* The image used */
+      background-image: url('grocery.jpeg');
+
+      /* Add the blur effect */
+      filter: blur(4px);
+      -webkit-filter: blur(4px);
+      /* Full height */
+      height: 100%;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+    }
+
+    .login-container {
+      width: 300px;
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      color: #45a049;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #45a049;
+      font-style: oblique;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+
+    .form-group button {
+      width: 100%;
+      padding: 7px;
+      background-color: #4CAF50;
+      color: #ffffff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .form-group textarea {
+      border-radius: 10px;
+    }
+
+    .form-group button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<script src="signup.js"></script>
+<script src="C:\Users\Shubh Parmar\Desktop\NMIMS\YEAR 3\Semester V\Fundamental of Website Designing\FWD_PROJECT\insert.php"></script>
+<body>
+    <div class="bg-image"></div>
+    <div class="login-container">
+        <h2>SIGN - UP</h2>
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your Full Name" required>
+            </div>
+            <div class="form-group">
+                <label for="add">Address:</label>
+                <textarea rows="3" cols="30"   type="text" id="add" name="address" placeholder="Enter your Address" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="username">Phone Number:</label>
+                <input type="text" id="no" name="phone_no" placeholder="Enter your Phone Number" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="pasword">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+                <a href="index.html"><input type="submit" value="submit" class="btn" name="submit" </a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+

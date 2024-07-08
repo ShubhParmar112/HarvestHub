@@ -1,0 +1,260 @@
+<html>
+<head>
+    <title> 
+        HarvestHub 
+    </title> 
+    <link rel="icon" href= "harvesthub.png" type="image/x-icon">
+    <link rel="stylesheet" href="vegetables.css">
+</head>
+<script>
+    function addtoCart(item){
+        var x = JSON.parse(localStorage.getItem('cart'));
+        if(x == null){
+            var items = [];
+            items.push(item);
+            localStorage.setItem('cart',JSON.stringify(items))
+        }
+        else{
+            x.push(item)
+            localStorage.setItem('cart',JSON.stringify(x))
+        }
+        alert("ADDED " + item + " to cart")
+    }
+</script>
+<body><center>
+    <header>
+        <div class="banner-card">
+            <div class="banner-text">
+            <h1>VEGETABLES</h1>
+            <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="product.html">CART</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+            </ul>
+            </nav>
+            </div>
+        </div>
+    </header>
+</center><br><br>
+    <h2><marquee>Featured Products</marquee></h2>
+    <section class="featured-products">
+        <div class="product">
+            <img src="beans.png" alt="Product 1">
+            <h3>French Beans</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>0.5 Kg</option>
+                <option>1 Kg</option>
+                <option>1.5 Kg</option>
+                <option>2 Kg</option>
+                <option>3 Kg</option>
+                <option>4 Kg</option>
+                <option>5 Kg</option>
+            </select><br><br>
+            <p><center>1/2Kgs - ₹62</center></p><br>
+            <button onclick="addtoCart('beans')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="Brinjal.png" alt="Product 2">
+            <h3>Brinjal</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>0.5 Kg</option>
+                <option>1 Kg</option>
+                <option>1.5 Kg</option>
+                <option>2 Kg</option>
+                <option>3 Kg</option>
+                <option>4 Kg</option>
+                <option>5 Kg</option>
+            </select><br><br>
+            <p><center>1Kgs - ₹120</center></p><br>
+            <button onclick="addtoCart('Brinjal')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="bottlegourd.png" alt="Product 1">
+            <h3>Bottle Gourd</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>0.5 Kg</option>
+                <option>1 Kg</option>
+                <option>1.5 Kg</option>
+                <option>2 Kg</option>
+                <option>3 Kg</option>
+                <option>4 Kg</option>
+                <option>5 Kg</option>
+            </select><br><br>
+            <p><center>1 Kgs - ₹20</center></p><br>
+            <button onclick="addtoCart('bottlegourd')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="cabbage.png" alt="Product 2">
+            <h3>Cabbage</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>0.5 Kg</option>
+                <option>1 Kg</option>
+                <option>1.5 Kg</option>
+                <option>2 Kg</option>
+                <option>3 Kg</option>
+                <option>4 Kg</option>
+                <option>5 Kg</option>
+            </select><br><br>
+            <p><center>1 Kgs - ₹30</center></p><br>
+            <button onclick="addtoCart('cabbage')">ADD TO CART</button>
+        </div>
+        <!--<br><br>--> 
+        <div class="product">
+            <img src="cauliflower.png" alt="Product 2">
+            <h3>Cauliflower</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>0.5 Kg</option>
+                <option>1 Kg</option>
+                <option>1.5 Kg</option>
+                <option>2 Kg</option>
+                <option>3 Kg</option>
+                <option>4 Kg</option>
+                <option>5 Kg</option>
+            </select><br><br>
+            <p><center>1 Kgs - ₹50</center></p><br>
+            <button onclick="addtoCart('cauliflower')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="ladyfinger.png" alt="Product 2">
+            <h3>Lady Finger</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1/2 Kg</option>
+                <option>1 Kg</option>
+                <option>1.5 Kg</option>
+                <option>2 Kg</option>
+                <option>3 Kg</option>
+                <option>4 Kg</option>
+                <option>5 Kg</option>
+            </select><br><br>
+            <p><center>1/2Kgs - ₹40</center></p><br>
+            <button onclick="addtoCart('ladyfinger')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="onion.png" alt="Product 1">
+            <h3>Onion</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>0.5 Kg</option>
+                <option>1 Kg</option>
+                <option>1.5 Kg</option>
+                <option>2 Kg</option>
+                <option>3 Kg</option>
+                <option>4 Kg</option>
+                <option>5 Kg</option>
+            </select><br><br>
+            <p><center>1/2Kgs - ₹35</center></p><br>
+            <button onclick="addtoCart('onion')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="potato.png" alt="Product 1">
+            <h3>Potato</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>0.5 Kg</option>
+                <option>1 Kg</option>
+                <option>1.5 Kg</option>
+                <option>2 Kg</option>
+                <option>3 Kg</option>
+                <option>4 Kg</option>  
+                <option>5 Kg</option>
+            </select><br><br>
+            <p><center>1/2Kgs - ₹20</center></p><br>
+            <button onclick="addtoCart('potato')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="tomato.png" alt="Product 2">
+            <h3>Tomato</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>0.5 Kg</option>
+                <option>1 Kg</option>
+                <option>1.5 Kg</option>
+                <option>2 Kg</option>
+                <option>3 Kg</option>
+                <option>4 Kg</option>
+                <option>5 Kg</option>
+            </select><br><br>
+            <p><center>1/2Kgs - ₹15</center></p><br>
+            <button onclick="addtoCart('tomato')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="spinach.png" alt="Product 2">
+            <h3>Spinach</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>100 g</option>
+                <option>200 g</option>
+                <option>250 g</option>
+                <option>500 g</option>
+                <option>1 Kg</option>
+                </select><br><br>
+            <p><center>100 Gms - ₹18</center></p><br>
+            <button onclick="addtoCart('spinach')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="chilly.png" alt="Product 2">
+            <h3>Chilly</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>100 g</option>
+                <option>200 g</option>
+                <option>250 g</option>
+                <option>500 g</option>
+                <option>1 Kg</option>
+                </select><br><br>
+            <p><center>100 Gms - ₹15</center></p><br>
+            <button onclick="addtoCart('chilly')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="lemon.png" alt="Product 1">
+            <h3>Lemon</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>100 g</option>
+                <option>200 g</option>
+                <option>250 g</option>
+                <option>500 g</option>
+                <option>1 Kg</option>
+                </select><br><br>
+            <p><center>100 Gms - ₹20</center></p><br>
+            <button onclick="addtoCart('lemon')">ADD TO CART</button>
+        </div>
+        <!-- Add more products here -->
+
+    </section>
+    <footer>
+        <p><center>&copy; HARVEST HUB</center></p>
+    </footer>
+</body>
+</html>
+<!--Lady finger, Spinach, potato, tomato, onion, chilly, lemon, cauliflower, cabbage, bottle gourd, Brinjal, bean-->

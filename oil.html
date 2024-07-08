@@ -1,0 +1,178 @@
+<html>
+<head>
+    <title> 
+        HarvestHub 
+    </title> 
+    <link rel="icon" href= "harvesthub.png" type="image/x-icon">
+    <!---<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <link rel="stylesheet" href="oil.css">
+</head>
+<script>
+    function addtoCart(item){
+        var x = JSON.parse(localStorage.getItem('cart'));
+        if(x == null){
+            var items = [];
+            items.push(item);
+            localStorage.setItem('cart',JSON.stringify(items))
+        }
+        else{
+            x.push(item)
+            localStorage.setItem('cart',JSON.stringify(x))
+        }
+        alert("ADDED " + item + " to cart")
+    }
+</script>
+<body><center>
+    <header>
+        <div class="banner-card">
+            <!--<img src="vegetables footer.jpg">-->
+            <div class="banner-text">
+            <h1>EDIBLE OIL & GHEE</h1>
+            <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="product.html">CART</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+            </ul>
+            </nav>
+            </div>
+        </div>
+    </header>
+</center><br><br>
+    <h2><marquee>Featured Products</marquee></h2>
+    <section class="featured-products">
+        <div class="product">
+            <img src="vegoil.png" alt="Product 1">
+            <h3>Vegetable Oil</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1 L</option>
+                <option>2 L</option>
+                <option>3 L</option>
+                <option>4 L</option>
+                <option>5 L</option>
+            </select><br><br>
+            <p><center>1 Litre - ₹100</center></p><br>
+            <button onclick="addtoCart('vegoil')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="sunoil.png" alt="Product 2">
+            <h3>Sunflower Oil</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1 L</option>
+                <option>2 L</option>
+                <option>3 L</option>
+                <option>4 L</option>
+                <option>5 L</option>
+            </select><br><br>
+            <p><center>1 Litre - ₹120</center></p><br>
+            <button onclick="addtoCart('sunoil')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="musturdoil.png" alt="Product 2">
+            <h3>Musturd Oil</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1 L</option>
+                <option>2 L</option>
+                <option>3 L</option>
+                <option>4 L</option>
+                <option>5 L</option>
+            </select><br><br>
+            <p><center>1 Litre - ₹150</center></p><br>
+            <button onclick="addtoCart('musturdoil')">ADD TO CART</button>
+        </div>
+        <br><br>
+        <div class="product">
+            <img src="soyabeanoil.png" alt="Product 2">
+            <h3>Soyabean Oil</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1 L</option>
+                <option>2 L</option>
+                <option>3 L</option>
+                <option>4 L</option>
+                <option>5 L</option>
+            </select><br><br>
+            <p><center>1 Litre - ₹115</center></p><br>
+            <button onclick="addtoCart('soyabeanoil')">ADD TO CART</button>
+        </div>
+        
+        <div class="product">
+            <img src="oliveoil.png" alt="Product 2">
+            <h3>Olive Oil</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1 L</option>
+                <option>2 L</option>
+                <option>3 L</option>
+                <option>4 L</option>
+                <option>5 L</option>
+            </select><br><br>
+            <p><center>1 Litre - ₹1500</center></p><br>
+            <button onclick="addtoCart('oliveoil')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="tiloil.png" alt="Product 2">
+            <h3>Sesame Oil</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1 L</option>
+                <option>2 L</option>
+                <option>3 L</option>
+                <option>4 L</option>
+                <option>5 L</option>
+            </select><br><br>
+            <p><center>1 Litre - ₹415</center></p><br>
+            <button onclick="addtoCart('tiloil')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="cowghee.png" alt="Product 1">
+            <h3>Cow Ghee</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1 L</option>
+                <option>2 L</option>
+                <option>3 L</option>
+                <option>4 L</option>
+                <option>5 L</option>
+            </select><br><br>
+            <p><center>1 Litre - ₹730</center></p><br>
+            <button onclick="addtoCart('cowghee')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="buffaloghee.png" alt="Product 1">
+            <h3>Buffalo Ghee</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1 L</option>
+                <option>2 L</option>
+                <option>3 L</option>
+                <option>4 L</option>
+                <option>5 L</option>
+            </select><br><br>
+            <p><center>1 Litre - ₹650</center></p><br>
+            <button onclick="addtoCart('buffaloghee')">ADD TO CART</button>
+        </div>
+    </section>
+    <footer>
+        <p><center>&copy; HARVEST HUB</center></p>
+    </footer>
+</body>
+</html>

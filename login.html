@@ -1,0 +1,117 @@
+<html>
+<head>
+  <title> 
+    HarvestHub 
+</title> 
+<link rel="icon" href= "harvesthub.png" type="image/x-icon">
+  <style>
+    /* Style the body */
+    body, html {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .bg-image {
+      /* The image used */
+      background-image: url('grocery.jpeg');
+
+      /* Add the blur effect */
+      filter: blur(4px);
+      -webkit-filter: blur(4px);
+
+      /* Full height */
+      height: 100%;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+    }
+
+    .login-container {
+      width: 300px;
+      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      color: #45a049;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #45a049;
+      font-style: oblique;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+
+    .form-group button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #ffffff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .form-group button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+    <div class="bg-image"></div>
+    <div class="login-container">
+        <h2>HARVERT HUB</h2>
+        <!--<form>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+            <a href="index.html"><button type="submit">Login</button></a>
+            </div>
+        </form>-->
+        <form>
+          <div class="form-group">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" placeholder="Enter your username" required>
+          </div>
+          <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          </div>
+          <div class="form-group">
+              <a href="index.html"><button>Login</button></a>
+          </div>
+        </form>
+    </div>
+</body>
+</html>

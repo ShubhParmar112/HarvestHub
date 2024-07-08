@@ -1,0 +1,184 @@
+<html>
+<head>
+    <title> 
+        HarvestHub 
+    </title> 
+    <link rel="icon" href= "harvesthub.png" type="image/x-icon">
+    <!---<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <link rel="stylesheet" href="meat.css">
+</head>
+<script>
+    function addtoCart(item){
+        var x = JSON.parse(localStorage.getItem('cart'));
+        if(x == null){
+            var items = [];
+            items.push(item);
+            localStorage.setItem('cart',JSON.stringify(items))
+        }
+        else{
+            x.push(item)
+            localStorage.setItem('cart',JSON.stringify(x))
+        }
+        alert("ADDED " + item + " to cart")
+    }
+</script>
+<body><center>
+    <header>
+        <div class="banner-card">
+            
+            <div class="banner-text">
+            <h1>MEAT</h1>
+            <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="product.html">CART</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+            </ul>
+            </nav>
+            <!--<img src="vegetables footer.jpg">-->
+            </div>
+        </div>
+    </header>
+</center><br><br>
+    <h2><marquee>Featured Products</marquee></h2>
+    <section class="featured-products">
+        <div class="product">
+            <img src="basa.png" alt="Product 1">
+            <h3>Basa</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1Kg</option>
+                <option>2Kg</option>
+                <option>3Kg</option>
+                <option>4Kg</option>
+                <option>5Kg</option>
+            </select><br><br>
+            <p><center>1 Kgs - ₹625</center></p><br>
+            <button onclick="addtoCart('basa')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="chicken.png" alt="Product 2">
+            <h3>Chicken</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1Pc</option>
+                <option>2Pc</option>
+                <option>3Pc</option>
+                <option>4Pc</option>
+                <option>5Pc</option>
+            </select><br><br>
+            <p><center>1 Pc - ₹300</center></p><br>
+            <button onclick="addtoCart('chicken')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="currycut.png" alt="Product 1">
+            <h3>Chicken Curry Cut</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1Kg</option>
+                <option>2Kgs</option>
+                <option>3Kgs</option>
+                <option>4Kgs</option>
+                <option>5Kgs</option>
+            </select><br><br>
+            <p><center>1 Kg - ₹330</center></p><br>
+            <button onclick="addtoCart('currycut')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="tuna.png" alt="Product 2">
+            <h3>Tuna</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>0.5Kgs</option>
+                <option>1Kg</option>
+                <option>2Kgs</option>
+                <option>3Kgs</option>
+                <option>4Kgs</option>
+                <option>5Kgs</option>
+            </select><br><br>
+            <p><center>1/2 Kgs - ₹335</center></p><br>
+            <button onclick="addtoCart('tuna')">ADD TO CART</button>
+        </div>
+        <br><br>
+        <div class="product">
+            <img src="mutton.png" alt="Product 2">
+            <h3>Mutton</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1Kg</option>
+                <option>2Kgs</option>
+                <option>3Kgs</option>
+                <option>4Kgs</option>
+                <option>5Kgs</option>
+            </select><br><br>
+            <p><center>1 Kg - ₹800</center></p><br>
+            <button onclick="addtoCart('mutton')">ADD TO CART</button>
+        </div>
+        
+        <div class="product">
+            <img src="pepperoni.png" alt="Product 2">
+            <h3>Pepperoni</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1Kg</option>
+                <option>2Kg</option>
+                <option>3Kg</option>
+                <option>4Kg</option>
+                <option>5Kg</option>
+            </select><br><br>
+            <p><center>1 Kgs - ₹730</center></p><br>
+            <button onclick="addtoCart('pepperoni')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="pork.png" alt="Product 2">
+            <h3>Pork</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1 Kg</option>
+                <option>2 Kg</option>
+                <option>3 Kg</option>
+                <option>4 Kg</option>
+                <option>5 Kg</option>
+            </select><br><br>
+            <p><center>1 Kgs - ₹420</center></p><br>
+            <button onclick="addtoCart('pork')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="sausage.png" alt="Product 1">
+            <h3>Sausage</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>250Gms</option>
+                <option>500Gms</option>
+                <option>1Kg</option>
+                <option>2Kg</option>
+                <option>3Kg</option>
+            </select><br><br>
+            <p><center>250 Gms - ₹200</center></p><br>
+            <button onclick="addtoCart('sausage')">ADD TO CART</button>
+        </div>
+
+        <!-- Add more products here -->
+
+    </section>
+    <footer>
+        <p><center>&copy; HARVEST HUB</center></p>
+    </footer>
+</body>
+</html>
+<!-- bacon, chicken, fish, mutton, pepperoni, poke, sausage, sirloin-->

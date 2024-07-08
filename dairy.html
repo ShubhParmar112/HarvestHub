@@ -1,0 +1,198 @@
+<html>
+<head>
+    <title> 
+        HarvestHub 
+    </title> 
+    <link rel="icon" href= "harvesthub.png" type="image/x-icon">
+    <!---<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <link rel="stylesheet" href="dairy.css">
+</head>
+<script>
+    function addtoCart(item){
+        var x = JSON.parse(localStorage.getItem('cart'));
+        if(x == null){
+            var items = [];
+            items.push(item);
+            localStorage.setItem('cart',JSON.stringify(items))
+        }
+        else{
+            x.push(item)
+            localStorage.setItem('cart',JSON.stringify(x))
+        }
+        alert("ADDED " + item + " to cart")
+    }
+</script>
+<body><center>
+    <header>
+        <div class="banner-card">
+            
+            <div class="banner-text">
+            <h1>DAIRY PRODUCTS</h1>
+            <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="product.html">CART</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+            </ul>
+            </nav>
+            <!--<img src="vegetables footer.jpg">-->
+            </div>
+        </div>
+    </header>
+</center><br><br>
+    <h2><marquee>Featured Products</marquee></h2>
+    <section class="featured-products">
+        <div class="product">
+            <img src="butter.png" alt="Product 2">
+            <h3>Butter</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>100 g</option>
+                <option>500 g</option>
+                <option>1 Kg</option>
+                <option>2 Kg</option>
+                <option>3 Kg</option>
+            </select><br><br>
+            <p><center>100 g - ₹56</center></p><br>
+            <button onclick="addtoCart('butter')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="chaas.png" alt="Product 1">
+            <h3>Chaas</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>250 ml</option>
+                <option>500 ml</option>
+                <option>1 L</option>
+                <option>2 L</option>
+                <option>3 L</option>
+            </select><br><br>
+            <p><center>250 ml - ₹15</center></p><br>
+            <button onclick="addtoCart('chaas')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="cheese.png" alt="Product 1">
+            <h3>Cheese</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>100 g</option>
+                <option>200 g</option>
+                <option>1 Kg</option>
+                <option>2 Kg</option>
+                <option>3 Kg</option>
+            </select><br><br>
+            <p><center>100 g - ₹80</center></p><br>
+            <button onclick="addtoCart('cheese')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="curd.png" alt="Product 2">
+            <h3>Curd</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>250 ml</option>
+                <option>500 ml</option>
+                <option>1 L</option>
+                <option>2 L</option>
+            </select><br><br>
+            <p><center>250 ml - ₹25</center></p><br>
+            <button onclick="addtoCart('curd')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="milk.png" alt="Product 2">
+            <h3>Milk</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1 Litre</option>
+                <option>2 Litre</option>
+                <option>3 Litre</option>
+                <option>4 Litre</option>
+                <option>5 Litre</option>
+            </select><br><br>
+            <p><center>1 Litre - ₹74</center></p><br>
+            <button onclick="addtoCart('milk')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="mozzarellacheese.png" alt="Product 2">
+            <h3>Mozzarella Cheese</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1 Kg</option>
+                <option>2 Kgs</option>
+                <option>3 Kgs</option>
+                <option>4 Kgs</option>
+                <option>5 Kgs</option>
+            </select><br><br>
+            <p><center>1 Kgs - ₹530</center></p><br>
+            <button onclick="addtoCart('mozzarellacheese')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="paneer.png" alt="Product 1">
+            <h3>Paneer</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>200 gm</option>
+                <option>1 Kgs</option>
+                <option>2 Kgs</option>
+                <option>3 Kgs</option>
+            </select><br><br>
+            <p><center>200 Gm - ₹85</center></p><br>
+            <button onclick="addtoCart('paneer')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="whippedcream.png" alt="Product 2">
+            <h3>Whipped-Cream</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>250 ml</option>
+                <option>500 ml</option>
+                <option>1 L</option>
+                <option>2 L</option>
+                <option>3 L</option>
+            </select><br><br>
+            <p><center>250 ml - ₹70</center></p><br>
+            <button onclick="addtoCart('whippedcream')">ADD TO CART</button>
+        </div>
+        
+        <div class="product">
+            <img src="yogurt.png" alt="Product 1">
+            <h3>Yogurt</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>100 ml</option>
+                <option>200 ml</option>
+                <option>500 ml</option>
+                <option>1 L</option>
+                <option>2 L</option>
+            </select><br><br>
+            <p><center>100 ml - ₹30</center></p><br>
+            <button onclick="addtoCart('yogurt')">ADD TO CART</button>
+        </div>
+
+        
+        <!-- Add more products here -->
+
+    </section>
+    <footer>
+        <p><center>&copy; HARVEST HUB</center></p>
+    </footer>
+</body>
+</html>
+<!--milk, yogurt, paneer, butter, moz cheese, curd, cream, cheese-->

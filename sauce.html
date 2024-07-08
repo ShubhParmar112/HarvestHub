@@ -1,0 +1,158 @@
+<html>
+<head>
+    <title> 
+        HarvestHub 
+    </title> 
+    <link rel="icon" href= "harvesthub.png" type="image/x-icon">
+    <!---<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <link rel="stylesheet" href="sauce.css">
+</head>
+<script>
+    function addtoCart(item){
+        var x = JSON.parse(localStorage.getItem('cart'));
+        if(x == null){
+            var items = [];
+            items.push(item);
+            localStorage.setItem('cart',JSON.stringify(items))
+        }
+        else{
+            x.push(item)
+            localStorage.setItem('cart',JSON.stringify(x))
+        }
+        alert("ADDED " + item + " to cart")
+    }
+</script>
+<body><center>
+    <header>
+        <div class="banner-card">
+           
+            <div class="banner-text">
+            <h1>SAUCES & SPREADS</h1>
+            <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="product.html">CART</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+            </ul>
+            </nav>
+            </div>
+        </div>
+    </header>
+</center><br><br>
+    <h2><marquee>Featured Products</marquee></h2>
+    <section class="featured-products">
+        <div class="product">
+            <img src="bbqsauce.png" alt="Product 1">
+            <h3>Barbecue Sauce</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>500ml</option>
+                <option>1L</option>
+            </select><br><br>
+            <p><center>500 ml - ₹650</center></p><br>
+            <button onclick="addtoCart('bbqsauce')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="sweetchillisauce.png" alt="Product 2">
+            <h3>Sweet Chilly Sauce</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>500ml</option>
+                <option>1L</option>
+            </select><br><br>
+            <p><center>500 ml - ₹300</center></p><br>
+            <button onclick="addtoCart('sweetchillisauce')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="hotsus.png" alt="Product 2">
+            <h3>Hot Sauce</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>500ml</option>
+                <option>1L</option>
+            </select><br><br>
+            <p><center>500 ml - ₹250</center></p><br>
+            <button onclick="addtoCart('hotsus')">ADD TO CART</button>
+        </div>
+        <br><br>
+        <div class="product">
+            <img src="mayonnaise.png" alt="Product 2">
+            <h3>Mint Mayo Spread</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>500ml</option>
+                <option>1L</option>
+            </select><br><br>
+            <p><center>500 ml - ₹180</center></p><br>
+            <button onclick="addtoCart('mayonnaise')">ADD TO CART</button>
+        </div>
+        
+        <div class="product">
+            <img src="musturd.png" alt="Product 2">
+            <h3>Musturd Sauce</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>500ml</option>
+                <option>1L</option>
+            </select><br><br>
+            <p><center>500 ml - ₹250</center></p><br>
+            <button onclick="addtoCart('musturd')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="salsa sauce.png" alt="Product 2">
+            <h3>Salsa Sauce</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>500ml</option>
+                <option>1L</option>
+            </select><br><br>
+            <p><center>500 ml - ₹220</center></p><br>
+            <button onclick="addtoCart('salsa sauce')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="soyasause.png" alt="Product 1">
+            <h3>Soya Sauce</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>500ml</option>
+                <option>1L</option>
+            </select><br><br>
+            <p><center>500 ml - ₹280</center></p><br>
+            <button onclick="addtoCart('soyasause')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="tomatoketchup.png" alt="Product 1">
+            <h3>Tomato sauce</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>500ml</option>
+                <option>1L</option>
+            </select><br><br>
+            <p><center>500 ml - ₹200</center></p><br>
+            <button onclick="addtoCart('tomatoketchup')">ADD TO CART</button>
+        </div>
+
+        <!-- Add more products here -->
+
+    </section>
+    <footer>
+        <p><center>&copy; HARVEST HUB</center></p>
+    </footer>
+</body>
+</html>
+<!-- barbecue, fish sauce, hot sauces, mayonnaise, pesto, salsa, soya, tomato ketchup-->

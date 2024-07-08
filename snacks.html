@@ -1,0 +1,559 @@
+<html>
+<head>
+    <title> 
+        HarvestHub 
+    </title> 
+    <link rel="icon" href= "harvesthub.png" type="image/x-icon">
+    <!---<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <link rel="stylesheet" href="snacks.css">
+</head>
+<script>
+    function addtoCart(item){
+        var x = JSON.parse(localStorage.getItem('cart'));
+        if(x == null){
+            var items = [];
+            items.push(item);
+            localStorage.setItem('cart',JSON.stringify(items))
+        }
+        else{
+            x.push(item)
+            localStorage.setItem('cart',JSON.stringify(x))
+        }
+        alert("ADDED " + item + " to cart")
+    }
+</script>
+<body><center>
+    <header>
+        <div class="banner-card">
+            
+            <div class="banner-text">
+            <h1>SNACKS</h1>
+            <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="product.html">CART</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+            </ul>
+            </nav>
+            <!--<img src="vegetables footer.jpg">-->
+            </div>
+        </div>
+    </header>
+</center><br><br>
+    <h2><marquee>Featured Products</marquee></h2>
+    <section class="featured-products">
+        <div class="product">
+            <img src="pringles.png" alt="Product 2">
+            <h3>Pringles</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select><br><br>
+            <p><center>1 Piece - ₹115</center></p><br>
+            <button onclick="addtoCart('pringles')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="kurkure.png" alt="Product 2">
+            <h3>Kurkure</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select><br><br>
+            <p><center>1 Piece - ₹20</center></p><br>
+            <button onclick="addtoCart('kurkure')">ADD TO CART</button>
+        </div>
+        <br><br>
+        <div class="product">
+            <img src="lays.png" alt="Product 2">
+            <h3>Lays</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select><br><br>
+            <p><center>1 Piece - ₹20</center></p><br>
+            <button onclick="addtoCart('lays')">ADD TO CART</button>
+        </div>
+        
+        <div class="product">
+            <img src="cheeseballs.png" alt="Product 2">
+            <h3>Cheese Balls</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select><br><br>
+            <p><center>1 Piece - ₹30</center></p><br>
+            <button onclick="addtoCart('cheeseballs')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="tooyumm.png" alt="Product 2">
+            <h3>Too Yumm</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select><br><br>
+            <p><center>1 Piece - ₹30</center></p><br>
+            <button onclick="addtoCart('tooyumm')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="doritos.png" alt="Product 1">
+            <h3>Doritos</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select><br><br>
+            <p><center>1 Piece - ₹50</center></p><br>
+            <button onclick="addtoCart('doritos')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="ratlamisev.png" alt="Product 1">
+            <h3>Ratlami Sev</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select><br><br>
+            <p><center>1 Piece - ₹70</center></p><br>
+            <button onclick="addtoCart('ratlamisev')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="aloobhujia.png" alt="Product 1">
+            <h3>Aloo Bhujia</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select><br><br>
+            <p><center>1 Piece - ₹50</center></p><br>
+            <button onclick="addtoCart('aloobhujia')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="moongdal.png" alt="Product 2">
+            <h3>Moong Dal</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select><br><br>
+            <p><center>1 Piece - ₹55</center></p><br>
+            <button onclick="addtoCart('moongdal')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="channadal.png" alt="Product 2">
+            <h3>Channa Dal</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select><br><br>
+            <p><center>1 Piece - ₹45</center></p><br>
+            <button onclick="addtoCart('channadal')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="oreo.png" alt="Product 2">
+            <h3>Oreo</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select><br><br>
+            <p><center>1 Piece - ₹35</center></p><br>
+            <button onclick="addtoCart('oreo')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="unibic.png" alt="Product 1">
+            <h3>Unibic's</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select><br><br>
+            <p><center>1 Piece - ₹30</center></p><br>
+            <button onclick="addtoCart('unibic')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="hideNseek.png" alt="Product 1">
+            <h3>Hide 'N' Seek</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select><br><br>
+            <p><center>1 Piece - ₹35</center></p><br>
+            <button onclick="addtoCart('hideNseek')">ADD TO CART</button>
+        </div>
+        <div class="product">
+            <img src="goodday.png" alt="Product 1">
+            <h3>GoodDay</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select><br><br>
+            <p><center>1 Piece - ₹30</center></p><br>
+            <button onclick="addtoCart('goodday')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="parleg.png" alt="Product 2">
+            <h3>Parle G</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select><br><br>
+            <p><center>1 Piece - ₹20</center></p><br>
+            <button onclick="addtoCart('parleg')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="sprite.png" alt="Product 2">
+            <h3>Sprite</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select><br><br>
+            <p><center>1 Piece - ₹40</center></p><br>
+            <button onclick="addtoCart('sprite')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="coke.png" alt="Product 2">
+            <h3>Coca Cola</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select><br><br>
+            <p><center>1 Piece - ₹40</center></p><br>
+            <button onclick="addtoCart('coke')">ADD TO CART</button>
+        </div>
+        
+        <div class="product">
+            <img src="mountaindew.png" alt="Product 2">
+            <h3>Mountain Dew</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select><br><br>
+            <p><center>1 Piece - ₹35</center></p><br>
+            <button onclick="addtoCart('mountaindew')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="fanta.png" alt="Product 2">
+            <h3>Fanta</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select><br><br>
+            <p><center>1 Piece - ₹35</center></p><br>
+            <button onclick="addtoCart('fanta')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="limca.png" alt="Product 1">
+            <h3>Limca</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select><br><br>
+            <p><center>1 Piece - ₹35</center></p><br>
+            <button onclick="addtoCart('limca')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="cadburysilk.png" alt="Product 2">
+            <h3>Cadbury Silk</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select><br><br>
+            <p><center>1 Piece - ₹175</center></p><br>
+            <button onclick="addtoCart('cadburysilk')">ADD TO CART</button>
+        </div>
+        
+        <div class="product">
+            <img src="kitkat.png" alt="Product 2">
+            <h3>KitKat</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select><br><br>
+            <p><center>1 Piece - ₹30</center></p><br>
+            <button onclick="addtoCart('kitkat')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="ferrororocher.png" alt="Product 2">
+            <h3>Ferroro Rocher</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select><br><br>
+            <p><center>1 Piece - ₹465</center></p><br>
+            <button onclick="addtoCart('ferrororocher')">ADD TO CART</button>
+        </div>
+
+        <div class="product">
+            <img src="milkybar.png" alt="Product 1">
+            <h3>Milky Bar</h3>
+            <label>Add Number of Products:</label>
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select><br><br>
+            <p><center>1 Piece - ₹20</center></p><br>
+            <button onclick="addtoCart('milkybar')">ADD TO CART</button>
+        </div>
+        <!-- Add more products here -->
+    </section>
+    <footer>
+        <p><center>&copy; HARVEST HUB</center></p>
+    </footer>
+</body>
+</html>
+<!--CHIPS==> Pringles, kurkure, lays, cheese balls, too yumm, doritos-->
+<!--INDIAN SNACKS==> haldiram's ratlami sev, haldiram's aalo bhujia, haldiram's moong dal, haldiram's chana dal-->
+<!--BISCUITS==> oreo, unibic, hide'N'seek, good day, parle G-->
+<!--SOFT DRINKS==> sprite, cola, mtn dew, fanta, limca-->
